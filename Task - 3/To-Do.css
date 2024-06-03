@@ -1,0 +1,98 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.teahub.io%2Fphotos%2Ffull%2F336-3367903_aesthetic-anime-wallpaper-desktop.png&f=1&nofb=1&ipt=072acb973b63b6a435fe3e8a2494cc2e65b666325b4e2bba22fbebec45b9c019&ipo=images'); 
+    background-size: cover;
+    background-attachment: fixed; 
+    filter:brightness(40%);  
+}
+
+.box {
+    position: relative;
+    max-width: 640px; 
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.295); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #332f6bb0;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #1b129ead;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffffc7;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li span {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.complete-btn, .edit-btn, .delete-btn {
+    margin-left: 0.5px;
+    border-radius: 20px;
+}
