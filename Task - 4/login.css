@@ -1,0 +1,97 @@
+.box {
+    width: 100%;
+    height: 100vh;
+    background-position:center ;
+    background-image: url('https://cdn.wallpapersafari.com/98/16/TFhI6Z.jpg');
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffffff62;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;    
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+
+.form-box h1{
+    font-size: 33px;
+    margin-top: 60px;
+    color:#644536;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height:4px;
+    border-radius: 3px;
+    background: #B2675E;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 25px 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+i{
+    margin-left:15px ;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: #C4A381;
+    color: #644536;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+
+}
+
+.input-group{
+    height: 200px;
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
